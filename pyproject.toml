@@ -1,0 +1,20 @@
+[project]
+name = "pyspark-fantasy-sports"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "RandyAkerman",email = "randy@akerman.org"}
+]
+requires-python = "=3.11.*"
+readme = "README.md"
+dependencies = [
+    "pyspark (==4.0.0.dev2)",
+    "requests (>=2.32.3,<3.0.0)"
+]
+
+[tool.poetry]
+package-mode = true
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
