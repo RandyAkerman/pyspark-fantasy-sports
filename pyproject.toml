@@ -1,19 +1,28 @@
 [project]
 name = "pyspark-fantasy-sports"
 version = "0.1.0"
-description = ""
+description = "Custom Spark data sources for reading and writing fantasy sports data from various sources in Apache Spark, using the Python Data Source API."
 authors = [
-    {name = "RandyAkerman",email = "randy@akerman.org"}
+    {name = "Randy Akerman",email = "randy@akerman.org"}
 ]
 requires-python = "=3.11.*"
 readme = "README.md"
 dependencies = [
     "pyspark (==4.0.0.dev2)",
-    "requests (>=2.32.3,<3.0.0)"
+    "requests (>=2.32.3,<3.0.0)",
+    "pyarrow (>=19.0.0,<20.0.0)",
+    "pandas (>=2.0.0,<3.0.0)",
+    "grpcio (>=1.70.0,<2.0.0)",
+    "grpcio-status (>=1.70.0,<2.0.0)",
+    "pytest-mock (>=3.14.0,<4.0.0)",
 ]
 
 [tool.poetry]
 package-mode = true
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+python-dotenv = "^1.0.1"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]

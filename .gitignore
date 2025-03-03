@@ -162,3 +162,7 @@ cython_debug/
 # vscode
 .vscode/
 *.code-workspace
+
+# scratch stuff
+scratch/
+.env
